@@ -16,7 +16,7 @@ ini_set('display_errors', 1);
 // Application constants
 define('APP_NAME', 'SummitSphere');
 define('APP_VERSION', '1.0.0');
-define('APP_URL', getenv('APP_URL') ?: 'http://localhost/summitsphere');
+define('APP_URL', getenv('APP_URL') ?: 'http://localhost:8000');
 
 // Directory paths
 define('ROOT_PATH', dirname(__DIR__));

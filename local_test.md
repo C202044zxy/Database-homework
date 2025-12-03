@@ -6,11 +6,11 @@ To run this project locally, you'll need MySQL and a PHP web server. Here's how:
   mysql -u root -p
 
   # Run SQL files in order
-  source /database/sql/01_create_database.sql
-  source /database/sql/02_create_views.sql
-  source /database/sql/03_create_procedures.sql
-  source /database/sql/04_advanced_queries.sql
-  source /database/sql/05_seed_data.sql
+  source sql/01_create_database.sql
+  source sql/02_create_views.sql
+  source sql/03_create_procedures.sql
+  source sql/04_advanced_queries.sql
+  source sql/05_seed_data.sql
 
   2. Configure PHP Database Connection
 

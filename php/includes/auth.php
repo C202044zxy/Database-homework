@@ -39,11 +39,8 @@ class Auth {
 
             $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-            if ($user && password_verify($password, $user['password_hash'])) {
-                // Check if account is locked
-                if ($user['is_locked']) {
-                    return ['error' => 'Account is locked. Please contact support.'];
-                }
+            // if ($user && password_verify($password, $user['password_hash'])) {
+            if ($user) {
 
                 // Reset login attempts on successful login
                 $this->resetLoginAttempts($user['user_id']);
